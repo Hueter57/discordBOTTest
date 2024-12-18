@@ -2,17 +2,14 @@
   "name": "discordbot",
   "version": "0.0.0",
   "private": true,
-
   "author": "Hueter",
-
   "description": "test",
-
   "dependencies": {
-    "discord": "*",
+    "@hubot-friends/hubot-discord": "^4.0.4",
     "hubot": "^11.0.0"
   },
   "scripts": {
-    "start": "hubot -a discord"
+    "start": "hubot -a @hubot-friends/hubot-discord -n  \"$HUBOT_DISCORD_NAME\" \"$@\""
   },
   "engines": {
     "node": "20.x"
