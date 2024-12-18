@@ -7,10 +7,10 @@
 //   
 
 export default async robot => {
-  robot.respond(/hoge$/i, res => {
-    res.reply("fuga");
+  robot.respond(/hoge$/i, async res => {
+    await res.reply("fuga");
   });
-  robot.respond(/ping$/i, res => {
-    res.reply("pong");
+  robot.respond(/ping$/i, async res => {
+    await res.reply("pong");
   });
 }
