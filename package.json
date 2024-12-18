@@ -3,15 +3,19 @@
   "version": "0.0.0",
   "private": true,
   "author": "Hueter",
-  "description": "test",
+  "description": "A simple helpful robot for your Company",
   "dependencies": {
     "@hubot-friends/hubot-discord": "^4.0.4",
-    "hubot": "^11.0.0"
+    "hubot": "^11.3.2"
   },
   "scripts": {
-    "start": "hubot -a @hubot-friends/hubot-discord -n  \"$HUBOT_DISCORD_NAME\" \"$@\""
+    "start": "hubot --adapter @hubot-friends/hubot-discord",
+    "test": "node --test"
   },
   "engines": {
     "node": "20.x"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC"
 }
